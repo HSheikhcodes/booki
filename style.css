@@ -148,7 +148,47 @@
     background-color: rgb(222, 235, 253);
   }
   /******************************************-----------------------------------------*********************/
-/*********************----------------------------------------- end *********************/
+/*********************----------------------------------- end *********************/
+
+  /******************************************--------------Paris-Accommo----------*********************/
+  
+
+ .hotels-rooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .hotel-room {
+    width: calc(33% - 20px);
+    margin: 0 10px 20px 0;
+  }
+  
+  .hotel-room img {
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .room-content {
+    width: calc(100% - 33%);
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  
+  .room-title,
+  .room-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .room-rating {
+    margin-bottom: 5px;
+  }
+/****************************************------------------- end *********************/
+
+
 
 /****** General ***********/
 * {
