@@ -200,22 +200,28 @@
   
 /****************************************------------------- end *********************/
 /****************************************------------------- Things to do in Paris ******************************************/
-.Containter-activties { 
+.Containter-activities { 
     display: flex;
+    justify-content: flex-start;
 }
 .activity {
     display: flex;
     flex-direction: row;
     order: 4;
     box-sizing: border-box;
-    gap: 30px;
-    padding: 30px;
-    border: 2px solid white; 
+    gap: 5px;
+    border: 20px solid white; 
+  }
+
+  .wrapper { 
+    background-color: rgb(250, 250, 250);
+    border: 2px solid white;
+    border-radius: 18%;
   }
 
   .activity-item { 
-    text-align: justify;
-    border: 2px solid white;
+    text-align: center;
+    border: 20px solid white;
 
   }
   
@@ -223,6 +229,14 @@
     max-width: 100%; 
     height: auto; 
   }
+
+.font {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin: 10px 0;
+}
+
+
 /****************************************---------------------- end *********************/
 
 /****************************************---------------------- footer *********************/
@@ -250,6 +264,7 @@ ul {
 li {
     margin-bottom: 5px; 
 }
+
 
 /****************************************---------------------- end *********************/
 
