@@ -1,13 +1,14 @@
-
 /*************************** Accommo/things to do linksssss ***********/
 .plinks {
     display: flex;
     justify-content: flex-end;
     position: right;
-    gap: 10px; 
-    
+    gap: 10px;
+    text-decoration: none;
+    margin: 0%;
+
 }
- 
+
 .page-links {
     padding-top: 6px;
     position: relative;
@@ -15,21 +16,22 @@
 }
 
 .page-links:hover {
-    color: blue;
+    color: rgb(4, 100, 246);
 }
 
 .page-links:hover::before {
     content: "";
     width: 100%;
     height: 2px;
-    background: blue;
+    background: rgb(4, 100, 246);
     position: absolute;
     top: 0;
 }
+
 /*************************** booki imagw *********************************/
 .booki-Logo {
     display: flex;
-    height: 40px; 
+    height: 40px;
     align-items: left;
 }
 
@@ -41,13 +43,16 @@
 
 /*********************end of booki *********************/
 
-.text, .search, .filter-container, .more-info {
-    margin-bottom: 20px; 
+.text,
+.search,
+.filter-container,
+.more-info {
+    margin-bottom: 20px;
 }
 
 /*********************--------------------------------------------500+*********************/
 
-.main-container { 
+.main-container {
     font-family: sans-serif;
     max-width: 1444px;
 }
@@ -59,35 +64,37 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  
-  .hotel-room {
+}
+
+.hotel-room {
     width: calc(33% - 20px);
     margin: 0 10px 20px 0;
-  }
-  
-  .hotel-room img {
+}
+
+.hotel-room img {
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-  }
-  
-  .room-content {
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1));
+}
+
+.room-content {
     width: calc(100% - 33%);
-    padding-left: 15px;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  .room-title,
-  .room-subtitle {
+
+}
+
+.room-title,
+.room-subtitle {
     font-size: 1.2rem;
     line-height: 1.4;
-  }
-  
-  .room-rating {
+}
+
+.room-rating {
     margin-bottom: 5px;
-  }
+}
 
 
 
@@ -110,8 +117,8 @@
 
 .location-text {
     border: 0;
-    border-top: 4px solid rgb(231, 230, 230); 
-    border-bottom: 2px solid rgb(231, 230, 230); 
+    border-top: 1px solid rgb(231, 230, 230);
+    border-bottom: 1px solid rgb(231, 230, 230);
 }
 
 .submit {
@@ -119,116 +126,138 @@
     color: white;
     border-radius: 0 10px 10px 0px;
     padding: 8px 12px;
-    border: 0; 
-    border-color: #0065fc; 
+    border: 0;
+    border-color: #0065fc;
     border: 0;
 }
+
+.icon>.fa-solid {
+    border: 2px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 8px;
+}
+
 /*********************--------- entiresection ******************************************/
 /*********************--------------------------------------------------FONT*********************/
 
-.text { 
+.text {
     font-family: 'Raleway', sans-serif;
 }
+
+.h3 {
+    text-decoration: none;
+}
+
 /**** Filtersssssssssss ***********/
 .filter-container {
     display: flex;
-    gap:10px;
-  }
-  
-  .filter {
+    gap: 15px;
+}
+
+.filter {
     border: 2px solid #D9D9D9;
     border-radius: 20px;
     padding: 8px 14px;
     font-weight: bold;
     background-color: #fff;
-  }
+}
 
-  .filter-container button:hover { 
+.filter-container button:hover {
     transition: all 0.3s;
     background-color: rgb(222, 235, 253);
-  }
-  /******************************************-----------------------------------------*********************/
+}
+
+/******************************************-----------------------------------------*********************/
 /*********************----------------------------------- end *********************/
 
-  /******************************************--------------Paris-Accommo----------*********************/
-  
+/******************************************--------------Paris-Accommo----------*********************/
 
- .hotels-rooms {
+
+.hotels-rooms {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     order: 6;
-  }
-  
-  .hotel-room {
+}
+
+.hotel-room {
     width: 243px;
     margin: 0 10px 20px 0;
     border-radius: 1px;
     margin-bottom: 3%;
-  }
-  
-  
-  .hotel-room img {
-    width: 243px;;
+
+}
+
+
+.hotel-room img {
+    width: 243px;
+    ;
     height: 124px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-  }
-  
-  .room-content {
+    border-radius: 15px;
+}
+
+.room-content {
     width: calc(1000% - 3%);
     padding-left: 1px;
-  }
-  
-  .room-title,
-  .room-subtitle {
+}
+
+.room-title,
+.room-subtitle {
     font-size: 1.2rem;
     line-height: 1.4;
-  }
-  
-  room-rating {
-    margin-bottom: 1px;
-  }
-  
-  .border
-  {
-    background-color: white;
-    border-radius: 13%;
-    
-  }
+    margin-bottom: 8px;
+}
 
-  
+room-rating {
+    margin-bottom: 1px;
+}
+
+.border {
+    background-color: white;
+    border-radius: 10%;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+
 /****************************************------------------- end *********************/
 /****************************************------------------- Things to do in Paris ******************************************/
-.Containter-activities { 
+.Containter-activities {
     display: flex;
     justify-content: flex-start;
+
 }
+
 .activity {
     display: flex;
     flex-direction: row;
     order: 4;
     box-sizing: border-box;
     gap: 5px;
-    border: 20px solid white; 
-  }
+    border: 20px solid white;
 
-  .wrapper { 
-    background-color: rgb(250, 250, 250);
-    border: 2px solid white;
-    border-radius: 18%;
-  }
+}
 
-  .activity-item { 
+.wrapper {
+
+    border: 2px solid #FFFFFF;
+    border-radius: 10%;
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1));
+}
+
+.activity-item {
     text-align: center;
     border: 20px solid white;
 
-  }
-  
-  .activity img {
-    max-width: 100%; 
-    height: auto; 
-  }
+}
+
+.activity img {
+    max-width: 100%;
+    height: auto;
+}
 
 .font {
     font-family: 'Raleway', sans-serif;
@@ -244,25 +273,26 @@
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-  
+    justify-content: space-between;
+    padding: 20px;
+
 }
 
-.footer > div {
+.footer>div {
     display: flex;
     flex-direction: column;
-    margin-right: 20px; 
- }
+}
 
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 145px;
-  
+
 }
 
 li {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 
@@ -279,7 +309,8 @@ li {
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
+.fa-solid,
+.fa-regular {
     color: var(--main-color);
 }
 
@@ -290,7 +321,8 @@ body {
     width: 1440px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    margin: auto;
+    max-width: 1444;
 
 }
 
@@ -330,10 +362,10 @@ body {
 
 .header {
     display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 895.91px;
-align-self: stretch;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 895.91px;
+    align-self: stretch;
 }
 
 .testing {
@@ -347,12 +379,12 @@ align-self: stretch;
 
 
 
-.logo{
+.logo {
     display: flex;
-padding: 30px 50px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
+    padding: 30px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 /****** Accommodation And Popular ***********/
@@ -364,7 +396,7 @@ gap: 10px;
 .accommodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 12.1px;
     box-sizing: border-box;
 }
 
@@ -379,12 +411,12 @@ gap: 10px;
     align-items: center;
 }
 
-.accommodation-cards .card{
+.accommodation-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
-.accommodation-cards img{
+.accommodation-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
