@@ -1,12 +1,45 @@
+/****** General ***********/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 1440px !important;
+    min-width: 1024px !important;
+}
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid,
+.fa-regular {
+    color: var(--main-color);
+}
+
+
+.main-container {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+
 /*************************** Accommo/things to do linksssss ***********/
 .plinks {
     display: flex;
     justify-content: flex-end;
     position: right;
     gap: 10px;
-    text-decoration:none;
+    text-decoration: none;
     margin: 0%;
-
 }
 
 .page-links {
@@ -37,9 +70,10 @@
 }
 
 .booki-Logo img {
-    height: 19px;
-    width: 65px;
+
     padding-bottom: 3px;
+    width: 69px;
+    height: 23px;
 }
 
 /*********************end of booki *********************/
@@ -49,16 +83,6 @@
 .filter-container {
     margin-bottom: 10px;
 }
-
-/*********************--------------------------------------------500+*********************/
-
-.main-container {
-    font-family: sans-serif;
-    max-width: 1444px;
-}
-
-/*********************---------------------------------------Paris-ACCOMMO*********************/
-
 
 /*********************------------------------------------- Search box *********************/
 .search {
@@ -85,7 +109,7 @@
     margin-left: 3px;
 }
 
-.location-text > .value { 
+.location-text>.value {
     margin-inline-start: 0.5%;
 }
 
@@ -99,9 +123,10 @@
     border: 0;
     font-weight: 700;
 }
+
 /*********************--------- ICON ******************************************/
 
-.more-info { 
+.more-info {
     display: flex;
 }
 
@@ -111,7 +136,7 @@
 
 }
 
-.icon { 
+.icon {
     display: flex;
     gap: 10px;
 
@@ -128,13 +153,10 @@
     margin-bottom: 15px;
 }
 
-.text-content { 
+.text-content {
     text-align: center;
-    
+
 }
-
-
-/*********************--------- END ******************************************/
 
 
 /*********************--------- entiresection ******************************************/
@@ -151,7 +173,7 @@
 /**** Filtersssssssssss ***********/
 .filter-container {
     display: flex;
-    
+
 }
 
 .filter {
@@ -167,7 +189,6 @@
     background-color: rgb(222, 235, 253);
 }
 
-/******************************************-----------------------------------------*********************/
 /*********************----------------------------------- end *********************/
 
 /******************************************--------------Paris-Accommo----------*********************/
@@ -178,7 +199,13 @@
     flex-wrap: wrap;
     order: 6;
     justify-content: space-between;
+    row-gap: 14px;
 
+}
+
+.room-rating {
+    margin-bottom: 8px;
+    margin-top: 3px;
 }
 
 .hotel-room {
@@ -207,8 +234,8 @@
 .room-subtitle {
     font-size: 1.2rem;
     line-height: 1.4;
-    margin-bottom: 0px;
-    margin-top: 0;
+    margin-bottom: 2px;
+    margin-top: 0px;
 }
 
 room-rating {
@@ -223,10 +250,10 @@ room-rating {
     gap: 8px;
 }
 
-.show { 
+.show {
     margin-bottom: 1px;
     margin-top: 0;
-} 
+}
 
 /****************************************------------------- end *********************/
 /****************************************------------------- Things to do in Paris ******************************************/
@@ -243,7 +270,7 @@ room-rating {
     box-sizing: border-box;
     gap: 5px;
     border: 20px solid white;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
 
 }
 
@@ -255,7 +282,7 @@ room-rating {
 }
 
 .activity-item {
-    text-align: center;
+    text-align: left;
     border: 12px solid white;
 
 }
@@ -271,7 +298,7 @@ room-rating {
     margin: 10px 0;
 }
 
-.things-title { 
+.things-title {
     margin-inline-start: 4%;
     margin-top: 39px;
     margin-bottom: -13px;
@@ -284,25 +311,26 @@ room-rating {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    justify-content: space-between;
-    padding: 20px; 
-    line-height: 18.78px; 
+    justify-content: space-evenly;
+    padding: 20px 0;
+    line-height: 18.78px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 16px;
-    bottom: 0; 
+    margin-inline-start: -24%;
 }
 
 .footer>div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
+    margin-inline-start: -10px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 li {
@@ -310,40 +338,6 @@ li {
 }
 
 /****************************************---------------------- end *********************/
-
-/****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
-.fa-solid,
-.fa-regular {
-    color: var(--main-color);
-}
-
-body {
-    /* display: flex;
-    justify-content: center; */
-    display: flex;
-    width: 1440px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: auto;
-    max-width: 1444;
-
-}
-
-.main-container {
-    width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
 
 .section-title {
     margin: 0;
@@ -505,4 +499,3 @@ body {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
-
